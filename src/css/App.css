@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+.cartGallery {
+  color: white;
+}
+.body {
+  height: auto;
+  width: 100vw;
+  background-color: black;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 100px 30px;
+}
+
+.navBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 50px;
+  background-color: bisque;
+  position: fixed;
+  top: 0;
+}
+
+.sideNav {
+  height: 87vh;
+  width: 5%;
+  background-color: bisque;
+  position: fixed;
+  left: 0;
+  top: 13%;
+  border: 1px solid black;
+}
+
+.navBar h2 {
+  font-weight: 600;
+  color: black;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  transition: all 400ms ease;
+}
+
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  height: 8%;
+  width: 0;
+  border-radius: 8px;
+  background-color: black;
+  top: 60%;
+  left: -10%;
+  transition: all 400ms ease;
+}
+
+.navLinks a:hover::after {
+  width: 120%;
+}
+
+.bodyContent {
+  width: 70%;
+  border: 1px solid white;
+}
+
+.cartContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px 0;
+}
+
+.cartContainer h2 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 30px;
+  padding: 0;
+}
+
+.item {
+  height: 250px;
+  width: 200px;
+  box-shadow: -1px -1px 5px burlywood;
+}
+
+.item img {
+  height: 50%;
+  width: 100%;
+}
+
+.cartContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid blue;
+}
+
+.productItem {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+  position: relative;
+}
+
+.productItem .innerItem {
+  display: flex;
+}
+
+.innerItem .imageHolder {
+  position: relative;
+  height: 120px;
+}
+
+.imageHolder img {
+  height: 100%;
+}
+
+.amountSect {
+  display: flex;
+}
